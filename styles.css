@@ -1,0 +1,14 @@
+.btn_orange {
+  background: linear-gradient(#ffb469, #e57709);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  filter: drop-shadow(8px 0 16px #e5770935);
+}
+.btn_orange:hover {
+  background: linear-gradient(#fdb165, #db7005);
+}
+.text_header {
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}

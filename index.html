@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template 3</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <style>
+    .btn_orange {
+      background: linear-gradient(#ffb469, #e57709);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      filter: drop-shadow(8px 0 16px #e5770935);
+    }
+    .btn_orange:hover {
+      background: linear-gradient(#fdb165, #db7005);
+    }
+    .text_header {
+      font-size: 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn_next {
+      background: linear-gradient(#ffb469, #e57709);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn_next:hover {
+      background: linear-gradient(#ffae5d, #ff850b);
+    }
+    .background_gradient {
+      background-color: white;
+    }
+    .background_gradient:hover {
+      background: linear-gradient(#50c577, #2dbefc);
+    }
+  </style>
+
+  <body class="flex flex-col min-h-screen w-full overflow-x-hidden bg-white">
+    <header>
+      <div class="container mx-auto">
+        <div class="mx-auto py-4 px-4 lg:px-0 relative z-[9999]">
+          <div
+            class="group flex lg:flex-row items-center justify-between gap-6 flex-row-reverse"
+          >
+            <div class="w-auto z-50">
+              <img
+                src="Image/logo.png"
+                alt="Logo"
+                class="h-6 lg:h-10 object-contain"
+              />
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+            <label
+              for="menu-toggle"
+              class="lg:hidden flex flex-col justify-center items-center w-10 h-10 cursor-pointer z-50 transition-all duration-300"
+            >
+              <i
+                class="fa-solid fa-bars text-2xl text-gray-800 peer-checked:hidden block"
+              ></i>
+              <i
+                class="fa-solid fa-xmark text-3xl text-gray-800 peer-checked:block hidden"
+              ></i>
+            </label>
+
+            <label
+              for="menu-toggle"
+              class="fixed inset-0 bg-black/50 z-30 hidden peer-checked:block lg:hidden transition-opacity"
+            ></label>
+
+            <nav
+              class="fixed lg:relative top-0 left-0 lg:right-0 h-full max-h-screen lg:h-auto w-[70%] max-w-sm lg:w-auto bg-white lg:bg-transparent shadow-2xl lg:shadow-none z-[9999999999] transform -translate-x-full peer-checked:translate-x-0 lg:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center pt-8 pb-10 lg:py-0 px-8 lg:px-0 gap-6 lg:gap-2 xl:gap-15 overflow-y-auto lg:overflow-visible"
+            >
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Ưu đãi
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Dịch vụ
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Giới thiệu
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Đội ngũ bác sĩ
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Bảng giá
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Thư viện
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <div
+                class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              >
+                <h1
+                  class="text_header font-semibold transition-all duration-300"
+                >
+                  Liên hệ
+                </h1>
+                <div
+                  class="hidden lg:block opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 w-[14px] h-[3px] rounded-t-[1.5px]"
+                ></div>
+              </div>
+
+              <a
+                href="tel:19001806"
+                class="lg:hidden btn_orange text-white font-bold py-3 px-6 rounded-full text-sm mt-4 w-full flex justify-center items-center gap-2 shadow-lg flex-shrink-0"
+              >
+                <img src="Image/call.png" alt="" class="w-5 h-5" />
+                Hotline 1900 1806
+              </a>
+            </nav>
+
+            <a
+              href="tel:19001806"
+              class="hidden lg:flex btn_orange text-white font-bold py-2 px-4 rounded-full text-xs flex-row items-center gap-2"
+            >
+              <img src="Image/call.png" alt="" class="w-5 h-5" />
+              Hotline 1900 1806
+            </a>
+
+            <style>
+              #menu-toggle:checked + label .fa-bars {
+                display: none;
+              }
+              #menu-toggle:checked + label .fa-xmark {
+                display: block;
+              }
+              #menu-toggle:not(:checked) + label .fa-bars {
+                display: block;
+              }
+              #menu-toggle:not(:checked) + label .fa-xmark {
+                display: none;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- banner -->
+    <div class="mx-auto 2xl:container w-full h-full lg:mb-8 mb-3">
+      <img src="Image/banner.png" alt="" />
+    </div>
+
+    <!-- Frame 1 -->
+    <div
+      class="w-full h-full lg:my-8 my-3 mx-auto 2xl:container bg-white relative overflow-hidden flex justify-center items-center z-0"
+    >
+      <div class="mx-auto px-5 container z-10">
+        <div
+          class="relative grid lg:grid-cols-3 gap-3 justify-center min-h-[300px] lg:min-h-[500px]"
+        >
+          <div
+            class="flex flex-col grid-cols-1 gap-2 mb-6 w-full justify-center items-start"
+          >
+            <h2 class="text-2xl lg:text-4xl font-semibold text-gray-800 mb-4">
+              Chương trình ưu đãi:
+            </h2>
+            <p class="text-gray-600 text-sm my-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+              ratione, eaque velit quae assumenda illum id necessitatibus
+              distinctio provident hic, impedit, odit rem unde quo non itaque
+              nemo temporibus ut?
+            </p>
+
+            <div class="mt-8 flex gap-3">
+              <button
+                id="btn-frame1-prev"
+                class="group w-10 h-10 rounded-full btn_next border-gray-200 shadow-sm flex items-center justify-center transition-all duration-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-angle-left text-white"></i>
+              </button>
+
+              <button
+                id="btn-frame1-next"
+                class="group w-10 h-10 rounded-full btn_next border-gray-200 shadow-sm flex items-center justify-center transition-all duration-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-angle-right text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-0 right-0 w-[64%] h-full z-20">
+        <div class="splide" id="image-carousel">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="relative flex flex-col h-full mx-2 group">
+                  <div class="h-56 w-full overflow-hidden rounded-tl-3xl">
+                    <img
+                      src="Image/slider_frame2.png"
+                      alt="Slider Image"
+                      class="w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+
+                  <div
+                    class="-mt-12 relative z-10 flex flex-col items-center text-center p-6 shadow-md hover:shadow-xl transition-shadow duration-300 rounded-t-3xl rounded-br-3xl bg-white group-hover:bg-transparent group-hover:bg-gradient-to-r from-[#50c577] to-[#2dbefc]"
+                  >
+                    <h1
+                      class="text-2xl mb-1 text-transparent bg-clip-text bg-gradient-to-r from-[#50c577] to-[#2dbefc] group-hover:bg-none group-hover:text-white transition-colors duration-300"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2
+                      class="font-semibold text-gray-800 text-lg mb-2 group-hover:text-white transition-colors duration-300"
+                    >
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p
+                      class="mb-4 text-xs text-gray-500 group-hover:text-white transition-colors duration-300"
+                    >
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+
+                    <div
+                      class="mt-auto w-full p-[1.5px] rounded-full bg-gradient-to-r from-[#ffb469] to-[#e57709] group-hover:bg-transparent"
+                    >
+                      <button
+                        class="w-full h-full py-2 px-6 rounded-full bg-white transition-all duration-300 hover:bg-transparent group-hover:bg-transparent"
+                      >
+                        <span
+                          class="font-semibold text-xs text-transparent bg-clip-text bg-gradient-to-r from-[#ffb469] to-[#e57709] transition-all duration-300 group-hover:text-white group-hover:bg-none flex justify-center items-center"
+                        >
+                          Đăng ký nhận ưu đãi
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="relative flex flex-col h-full mx-2 group">
+                  <div class="h-56 w-full overflow-hidden rounded-tl-3xl">
+                    <img
+                      src="Image/slider_frame2.png"
+                      alt="Slider Image"
+                      class="w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+
+                  <div
+                    class="-mt-12 relative z-10 flex flex-col items-center text-center p-6 shadow-md hover:shadow-xl transition-shadow duration-300 rounded-t-3xl rounded-br-3xl bg-white group-hover:bg-transparent group-hover:bg-gradient-to-r from-[#50c577] to-[#2dbefc]"
+                  >
+                    <h1
+                      class="text-2xl mb-1 text-transparent bg-clip-text bg-gradient-to-r from-[#50c577] to-[#2dbefc] group-hover:bg-none group-hover:text-white transition-colors duration-300"
+                    >
+                      Ưu đãi 50%
+                    </h1>
+                    <h2
+                      class="font-semibold text-gray-800 text-lg mb-2 group-hover:text-white transition-colors duration-300"
+                    >
+                      Gói khám thai tổng quát
+                    </h2>
+                    <p
+                      class="mb-4 text-xs text-gray-500 group-hover:text-white transition-colors duration-300"
+                    >
+                      Lorem ipsum dolor sit amet tarancebe consectetur
+                      adipiscing elit turpis.
+                    </p>
+
+                    <div
+                      class="mt-auto w-full p-[1.5px] rounded-full bg-gradient-to-r from-[#ffb469] to-[#e57709] group-hover:bg-transparent"
+                    >
+                      <button
+                        class="w-full h-full py-2 px-6 rounded-full bg-white transition-all duration-300 hover:bg-transparent group-hover:bg-transparent"
+                      >
+                        <span
+                          class="font-semibold text-xs text-transparent bg-clip-text bg-gradient-to-r from-[#ffb469] to-[#e57709] transition-all duration-300 group-hover:text-white group-hover:bg-none flex justify-center items-center"
+                        >
+                          Đăng ký nhận ưu đãi
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                var splide = new Splide("#image-carousel", {
+                  type: "loop",
+                  perPage: 3.5,
+                  perMove: 1,
+                  gap: "1rem",
+                  pagination: false,
+                  arrows: false,
+                  breakpoints: {
+                    1280: {
+                      perPage: 3.5,
+                    },
+                    1024: {
+                      perPage: 2.5,
+                    },
+                    768: {
+                      perPage: 1.5,
+                      gap: "0.5rem",
+                    },
+                    640: {
+                      perPage: 1.2,
+                      gap: "0.5rem",
+                      padding: { left: 0, right: 20 },
+                    },
+                  },
+                });
+
+                splide.mount();
+                var btnPrev = document.getElementById("btn-frame1-prev");
+                var btnNext = document.getElementById("btn-frame1-next");
+
+                btnPrev.addEventListener("click", function () {
+                  splide.go("<");
+                });
+
+                btnNext.addEventListener("click", function () {
+                  splide.go(">");
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frame 2 -->
+    <div
+      class="container mx-auto grid grid-cols-2 w-full h-full lg:mb-8 mb-3 gap-6 items-center"
+    >
+      <div>
+        <img src="Image/png_frame2.png" alt="" />
+      </div>
+      <div class="flex flex-col gap-3">
+        <h1 class="font-semibold text-3xl">Dịch vụ thai sản trọn gói</h1>
+        <p class="text-gray-500 text-base">
+          Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng lắm
+          mệt mỏi, áp lực, thậm chí là nguy hiểm. Thấu hiểu nỗi niềm đó, dịch vụ
+          thai sản trọn gói Phương Đông nhằm mang tới trải nghiệm nhẹ nhàng, an
+          tâm cho người mẹ trong suốt thai kỳ, ngày vượt cạn đến sau sinh và sự
+          chăm sóc toàn diện với em bé ngay từ giây phút đầu tiên chào đời.
+        </p>
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-row items-center gap-2 font-semibold">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+          <div class="flex flex-row items-center gap-2 font-semibold ml-5">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+          <div class="flex flex-row items-center gap-2 font-semibold">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+          <div class="flex flex-row items-center gap-2 font-semibold ml-5">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+          <div class="flex flex-row items-center gap-2 font-semibold">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+          <div class="flex flex-row items-center gap-2 font-semibold ml-5">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+          <div class="flex flex-row items-center gap-2 font-semibold">
+            <img src="Image/png_2_frame2.png" alt="" class="w-3 h-3" />
+            <h2>Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</h2>
+          </div>
+        </div>
+        <button
+          class="btn_orange text-white font-bold py-3 px-6 rounded-full text-sm mt-4 w-fit shadow-lg flex justify-center items-center gap-2 cursor-pointer"
+        >
+          Liên hệ
+        </button>
+      </div>
+    </div>
+
+    <!-- Frame 3-->
+    <div
+      class="w-full h-full lg:mb-8 mb-3 mx-auto 2xl:container bg-white relative overflow-hidden z-0"
+    >
+      <div class="absolute top-0 left-0 w-full h-full z-10">
+        <img
+          src="Image/background_frame3_.png"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div
+        class="mx-auto w-full h-full container relative z-20 py-4 flex justify-center items-center"
+      >
+        <img src="Image/png_frame3.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Frame 4-->
+    <div
+      class="w-full h-full 2xl:container mx-auto mt-3 mb-35 bg-white relative flex justify-center items-center"
+    >
+      <div class="absolute w-full h-full">
+        <img
+          src="Image/Vecto_cir.png"
+          alt="vector"
+          class="absolute -bottom-35 left-3/7 w-[28%] hidden xl:block object-contain z-0"
+        />
+
+        <img
+          src="Image/png_frame4.png"
+          alt="img2"
+          class="w-full max-w-[60%] h-full object-contain object-left-top hidden lg:block z-10 absolute"
+        />
+      </div>
+
+      <div class="grid lg:grid-cols-2 items-center container">
+        <div class="lg:col-span-1 h-full hidden lg:block"></div>
+
+        <div
+          class="lg:col-span-1 flex flex-col gap-2 min-h-[500px] justify-center item-center text-left relative z-[9999]"
+        >
+          <div
+            class="bg-white block p-6 rounded-t-2xl rounded-br-2xl shadow-md w-full"
+          >
+            <h5
+              class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8"
+            >
+              Bệnh viên Phương Đông tiên phong trong dịch vụ thai sản trọn gói
+            </h5>
+            <p class="text-body mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse tale tincidunt tortor lobortis pretium nulla quis sem
+              nullam rhoncus. Ornare et dui sit massa. Volutpat porta leo
+              pulvinar adipiscing gestas metus
+            </p>
+            <button
+              class="btn_orange text-white font-bold rounded-full my-3 py-1 lg:py-3 px-1 lg:px-6 shadow-md hover:shadow-lg transition-all w-full sm:w-auto"
+            >
+              <div class="flex flex-row gap-2 items-center justify-center">
+                <span class="text-xs lg:text-base">Đăng ký tư vấn</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frame 5 -->
+    <div
+      class="w-full h-full min-h-[500px] 2xl:container mx-auto mt-3 mb-35 bg-white relative flex flex-col justify-start items-center"
+    >
+      <div
+        class="flex flex-row justify-between items-center w-full px-5 container mb-6 relative z-[9999]"
+      >
+        <h1 class="font-semibold text-xl">
+          Hình ảnh về cơ sở vật chất, trang thiết bị
+        </h1>
+
+        <div class="mt-8 flex gap-3">
+          <button
+            id="btn-frame1-prev"
+            class="group w-10 h-10 rounded-full btn_next border-gray-200 shadow-sm flex items-center justify-center transition-all duration-300 cursor-pointer"
+          >
+            <i class="fa-solid fa-angle-left text-white"></i>
+          </button>
+
+          <button
+            id="btn-frame1-next"
+            class="group w-10 h-10 rounded-full btn_next border-gray-200 shadow-sm flex items-center justify-center transition-all duration-300 cursor-pointer"
+          >
+            <i class="fa-solid fa-angle-right text-white"></i>
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="absolute top-0 right-0 w-full h-full z-20">
+          <div class="splide" id="frame5-carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="relative flex flex-col h-full mx-2 group">
+                    <div class="h-56 w-full overflow-hidden rounded-tl-3xl">
+                      <img
+                        src="Image/png1_frame5.png"
+                        alt="Slider Image"
+                        class="w-full h-full transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="relative flex flex-col h-full mx-2 group">
+                    <div class="h-56 w-full overflow-hidden rounded-tl-3xl">
+                      <img
+                        src="Image/png1_frame5.png"
+                        alt="Slider Image"
+                        class="w-full h-full transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  var splide = new Splide("#frame5-carousel", {
+                    type: "loop",
+                    perPage: 6,
+                    perMove: 1,
+                    gap: "1rem",
+                    pagination: false,
+                    arrows: false,
+                    breakpoints: {
+                      1280: {
+                        perPage: 4,
+                      },
+                      1024: {
+                        perPage: 4,
+                      },
+                      768: {
+                        perPage: 3,
+                        gap: "0.5rem",
+                      },
+                      640: {
+                        perPage: 2,
+                        gap: "0.5rem",
+                        padding: { left: 0, right: 20 },
+                      },
+                    },
+                  });
+
+                  splide.mount();
+                  var btnPrev = document.getElementById("btn-frame1-prev");
+                  var btnNext = document.getElementById("btn-frame1-next");
+
+                  btnPrev.addEventListener("click", function () {
+                    splide.go("<");
+                  });
+
+                  btnNext.addEventListener("click", function () {
+                    splide.go(">");
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
