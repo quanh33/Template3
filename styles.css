@@ -12,3 +12,8 @@
   cursor: pointer;
   white-space: nowrap;
 }
+
+.background-lime {
+  background: linear-gradient(#50c577, #2dbefc);
+  transition: all 0.3s ease;
+}
