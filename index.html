@@ -30,11 +30,13 @@
           class="group flex lg:flex-row items-center justify-between gap-6 flex-row-reverse"
         >
           <div class="w-auto z-50">
-            <img
-              src="Image/logo.png"
-              alt="Logo"
-              class="h-6 lg:h-10 object-contain"
-            />
+            <a href="">
+              <img
+                src="Image/logo.png"
+                alt="Logo"
+                class="h-6 lg:h-10 object-contain"
+              />
+            </a>
           </div>
 
           <input type="checkbox" id="menu-toggle" class="peer hidden" />
@@ -60,7 +62,7 @@
             class="fixed lg:relative top-0 left-0 lg:right-0 h-full max-h-screen lg:h-auto w-[70%] max-w-sm lg:w-auto bg-white lg:bg-transparent shadow-2xl lg:shadow-none z-[9999999999] transform -translate-x-full peer-checked:translate-x-0 lg:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center pt-8 pb-10 lg:py-0 px-8 lg:px-0 gap-6 lg:gap-2 xl:gap-15 overflow-y-auto lg:overflow-visible"
           >
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Ưu đãi
@@ -71,7 +73,7 @@
             </div>
 
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Dịch vụ
@@ -82,7 +84,7 @@
             </div>
 
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Giới thiệu
@@ -93,7 +95,7 @@
             </div>
 
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Đội ngũ bác sĩ
@@ -104,7 +106,7 @@
             </div>
 
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Bảng giá
@@ -115,7 +117,7 @@
             </div>
 
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Thư viện
@@ -126,7 +128,7 @@
             </div>
 
             <div
-              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item"
+              class="flex flex-col items-start lg:items-center justify-center cursor-pointer w-full lg:w-auto group/item hover:text-orange-500"
             >
               <h1 class="text_header font-semibold transition-all duration-300">
                 Liên hệ
@@ -157,7 +159,9 @@
     </header>
     <!-- banner -->
     <div class="mx-auto 2xl:container w-full h-full lg:mb-8 mb-3">
-      <img src="Image/banner.png" alt="" />
+      <a href="">
+        <img src="Image/banner.png" alt="" />
+      </a>
     </div>
 
     <!-- Frame 1 -->
@@ -606,9 +610,8 @@
                       </tr>`;
 
                     mobileHtml += `
-                        <div class="p-4 bg-white border-b border-dashed border-gray-300 last:border-b-0">
+                        <div class="p-4  border-b border-dashed border-gray-300 last:border-b-0 bg-slate-50">
                           <div class="mb-2">
-                            <span class="font-bold text-gray-800">STT: </span>
                             <span class="text-gray-600 font-medium">${
                               i + 1
                             }</span>
@@ -791,7 +794,7 @@
               pulvinar adipiscing gestas metus
             </p>
             <button
-              class="btn_orange text-white font-bold rounded-full my-3 py-1 lg:py-3 px-1 lg:px-6 shadow-md hover:shadow-lg transition-all w-full sm:w-auto"
+              class="btn_orange text-white font-bold rounded-full my-3 py-2 lg:py-3 px-4 lg:px-6 shadow-md hover:shadow-lg transition-all w-fit"
             >
               <div class="flex flex-row gap-2 items-center justify-center">
                 <span class="text-xs lg:text-base">Đăng ký tư vấn</span>
@@ -804,7 +807,7 @@
 
     <!-- Frame 5 -->
     <div
-      class="w-full 2xl:container mx-auto mt-10 mb-20 bg-white flex flex-col justify-start items-center px-4"
+      class="w-full 2xl:container mx-auto mt-10 mb-4 lg:mb-20 bg-white flex flex-col justify-start items-center px-4"
     >
       <div
         class="flex flex-row justify-between items-center w-full container mb-2"
@@ -965,7 +968,7 @@
 
     <!-- Frame 6 -->
     <div
-      class="w-full h-full 2xl:container mx-auto mt-3 mb-10 bg-white relative flex flex-col"
+      class="w-full h-full 2xl:container mx-auto lg:mt-3 mb-10 bg-white relative flex flex-col"
     >
       <div class="absolute w-full h-full z-0">
         <img
@@ -976,7 +979,7 @@
       </div>
 
       <div
-        class="container mx-auto relative z-10 py-10 px-3"
+        class="container mx-auto relative z-10 lg:py-10 px-3"
         x-data="{ showSearch: false }"
       >
         <div
@@ -1190,7 +1193,7 @@
             />
           </div>
           <div
-            class="lg:col-span-1 h-full w-full flex flex-col justify-center py-3 px-5 gap-2 lg:gap-4"
+            class="lg:col-span-1 h-full w-full flex flex-col justify-center py-3 px-5 gap-2 lg:gap-0"
           >
             <h1 class="font-bold text-sm lg:text-3xl py-1 lg:py-2">
               Chuyển dạ và sinh non có nguy hiểm?
@@ -1284,18 +1287,62 @@
           class="flex lg:flex-row flex-col items-center container px-3 lg:px-0"
         >
           <div class="h-full w-full flex flex-row justify-start items-center">
-            <iframe
-              class="w-full h-80 rounded-lg shadow-lg"
-              src="https://www.youtube.com/embed/RzNIHsCvrPc?si=1l7mt9cezWb7DH83"
-            ></iframe>
+            <div
+              x-data="{ playing: false }"
+              class="w-full h-80 rounded-lg shadow-lg overflow-hidden relative group cursor-pointer"
+            >
+              <div
+                x-show="!playing"
+                @click="playing = true"
+                class="relative w-full h-full"
+              >
+                <img
+                  src="Image/frame8.png"
+                  alt="Video Thumbnail"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors"
+                >
+                  <div
+                    class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    <svg
+                      xmlns="Image/"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-8 h-8 text-red-600 ml-1"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <template x-if="playing">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/RzNIHsCvrPc?si=1l7mt9cezWb7DH83&autoplay=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </template>
+            </div>
           </div>
           <div class="h-full w-full flex flex-col justify-center px-5 gap-4">
-            <h1 class="font-semibold text-3xl my-2">
+            <h1 class="font-semibold text-sm md:text-base lg:text-3xl my-2">
               Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh
               viện Phương Đông
             </h1>
 
-            <p class="text-base text-gray-600">
+            <p class="text-xs md:text-sm lg:text-base text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
               risus luctus donec Lorem malesuada scelerisque euismod ullamcorper
               ac lacus aliquet quisque. Pulvinar aenean fusce pulvinar elementum
@@ -1303,7 +1350,7 @@
             </p>
             <div class="flex justify-center lg:justify-normal">
               <a
-                class="btn_orange text-white font-bold py-3 px-6 rounded-full text-sm mt-2 lg:mt-4 flex justify-center items-center gap-2 shadow-lg flex-shrink-0 w-fit cursor-pointer"
+                class="btn_orange text-white font-bold py-2 px-4 lg:py-3 lg:px-6 rounded-full text-sm mt-2 lg:mt-4 flex justify-center items-center gap-2 shadow-lg flex-shrink-0 w-fit cursor-pointer"
               >
                 <img src="Image/call.png" alt="" class="w-5 h-5" />
                 Liên hệ ngay
@@ -1361,7 +1408,7 @@
         </div>
         <div class="flex justify-center lg:justify-normal">
           <a
-            class="btn_orange text-white font-bold py-3 px-6 rounded-full text-sm mt-4 flex justify-center items-center gap-2 shadow-lg flex-shrink-0 w-fit cursor-pointer"
+            class="btn_orange text-white font-bold py-2 px-4 lg:py-3 lg:px-6 rounded-full text-sm mt-4 flex justify-center items-center gap-2 shadow-lg flex-shrink-0 w-fit cursor-pointer"
           >
             <img src="Image/call.png" alt="" class="w-5 h-5" />
             Liên hệ ngay
@@ -1394,18 +1441,28 @@
       </div>
       <div class="grid grid-cols-2 lg:grid-cols-4 grid-rows-2 lg:gap-3 gap-5">
         <div class="grid-cols-1 flex justify-center items-start flex-col gap-3">
-          <img src="Image/png1_frame10.png" alt="" />
-          <h1 class="text-lg font-semibold">Gây sảy thai</h1>
-          <p class="text-base text-gray-600">
+          <img
+            src="Image/png1_frame10.png"
+            alt=""
+            class="lg:w-20 lg:h-20 w-16 h-16"
+          />
+          <h1 class="text-sm lg:text-lg font-semibold">Gây sảy thai</h1>
+          <p class="text-xs md:text-sm lg:text-base text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec
             morbi mauris, turpis fringilla condimentum urna sagittis
           </p>
         </div>
         <div class="grid-cols-1 lg:block hidden"></div>
         <div class="grid-cols-1 flex justify-center items-start flex-col gap-3">
-          <img src="Image/png2_frame10.png" alt="" />
-          <h1 class="text-lg font-semibold">Nguy hiểm cho cả hai mẹ con</h1>
-          <p class="text-base text-gray-600">
+          <img
+            src="Image/png2_frame10.png"
+            alt=""
+            class="lg:w-20 lg:h-20 w-16 h-16"
+          />
+          <h1 class="text-sm lg:text-lg font-semibold">
+            Nguy hiểm cho cả hai mẹ con
+          </h1>
+          <p class="text-xs md:text-sm lg:text-base text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec
             morbi mauris, turpis fringilla condimentum urna sagittis
           </p>
@@ -1413,18 +1470,30 @@
         <div class="grid-cols-1 lg:block hidden"></div>
         <div class="grid-cols-1 lg:block hidden"></div>
         <div class="grid-cols-1 flex justify-center items-start flex-col gap-3">
-          <img src="Image/png3_frame10.png" alt="" />
-          <h1 class="text-lg font-semibold">Sinh sản gặp khó khăn</h1>
-          <p class="text-base text-gray-600">
+          <img
+            src="Image/png3_frame10.png"
+            alt=""
+            class="lg:w-20 lg:h-20 w-16 h-16"
+          />
+          <h1 class="text-sm lg:text-lg font-semibold">
+            Sinh sản gặp khó khăn
+          </h1>
+          <p class="text-xs md:text-sm lg:text-base text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec
             morbi mauris, turpis fringilla condimentum urna sagittis
           </p>
         </div>
         <div class="grid-cols-1 lg:block hidden"></div>
         <div class="grid-cols-1 flex justify-center items-start flex-col gap-3">
-          <img src="Image/png4_frame10.png" alt="" />
-          <h1 class="text-lg font-semibold">Gây mất khả năng sinh sản</h1>
-          <p class="text-base text-gray-600">
+          <img
+            src="Image/png4_frame10.png"
+            alt=""
+            class="lg:w-20 lg:h-20 w-16 h-16"
+          />
+          <h1 class="text-sm lg:text-lg font-semibold">
+            Gây mất khả năng sinh sản
+          </h1>
+          <p class="text-xs md:text-sm lg:text-base text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec
             morbi mauris, turpis fringilla condimentum urna sagittis
           </p>
@@ -1450,11 +1519,13 @@
         >
           <div class="flex flex-col">
             <div class="lg:h-16 flex items-center mb-4 lg:mb-6">
-              <img
-                src="Image/logo_footer.png"
-                alt="Logo"
-                class="w-40 lg:w-auto lg:max-h-14 object-contain"
-              />
+              <a href="">
+                <img
+                  src="Image/logo_footer.png"
+                  alt="Logo"
+                  class="w-40 lg:w-auto lg:max-h-14 object-contain"
+                />
+              </a>
             </div>
 
             <div class="flex flex-col gap-4">
@@ -1487,18 +1558,24 @@
               <div class="text-sm">
                 <span class="opacity-80">Email:</span>
                 <span class="font-semibold break-all">
-                  bvphuongdong@phuongdonghospital.vn
+                  <a href="mailto:bvphuongdong@phuongdonghospital.vn">
+                    bvphuongdong@phuongdonghospital.vn
+                  </a>
                 </span>
               </div>
 
               <div class="text-sm">
                 <span class="font-semibold break-all">
-                  info.benhvienphuongdong@gmail.com
+                  <a href="mailto:info.benhvienphuongdong@gmail.com">
+                    info.benhvienphuongdong@gmail.com
+                  </a>
                 </span>
               </div>
               <div class="text-sm">
                 <span class="opacity-80">Tổng đài tư vấn:</span>
-                <span class="font-bold">1900 1806</span>
+                <span class="font-bold"
+                  ><a href="tel:19001806">1900 1806</a></span
+                >
               </div>
             </div>
           </div>
@@ -1516,15 +1593,15 @@
               </p>
               <p class="text-sm opacity-90">
                 <span class="font-semibol">Cấp cứu 24/7:</span>
-                0833 015 115
+                <a href="tel:0833015115"> 0833 015 115 </a>
               </p>
               <p class="text-sm opacity-90">
                 <span>Hotline Tiêm chủng:</span>
-                <span> 0911 615 115 </span>
+                <span> <a href="tel:0911615115"> 0911 615 115 </a></span>
               </p>
               <p class="text-sm opacity-90">
                 <span>Hotline Hỗ trợ KH:</span>
-                <span> 1900 1806 </span>
+                <span> <a href="tel:19001806"> 1900 1806 </a></span>
               </p>
             </div>
           </div>
@@ -1569,11 +1646,13 @@
               </div>
 
               <div class="mt-4">
-                <img
-                  src="Image/cocongthuong.png"
-                  alt="Bộ công thương"
-                  class="w-32 lg:w-[60%]"
-                />
+                <a href="">
+                  <img
+                    src="Image/cocongthuong.png"
+                    alt="Bộ công thương"
+                    class="w-32 lg:w-[60%]"
+                  />
+                </a>
               </div>
             </div>
           </div>
