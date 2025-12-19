@@ -12,8 +12,45 @@
   cursor: pointer;
   white-space: nowrap;
 }
-
-.background-lime {
-  background: linear-gradient(#50c577, #2dbefc);
+.btn_next {
+  background: linear-gradient(#ffb469, #e57709);
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn_next:hover {
+  background: linear-gradient(#ffae5d, #ff850b);
+}
+.background_gradient {
+  background-color: white;
+}
+.background_gradient:hover {
+  background: linear-gradient(#50c577, #2dbefc);
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#menu-toggle:checked + label .fa-bars {
+  display: none;
+}
+#menu-toggle:checked + label .fa-xmark {
+  display: block;
+}
+#menu-toggle:not(:checked) + label .fa-bars {
+  display: block;
+}
+#menu-toggle:not(:checked) + label .fa-xmark {
+  display: none;
 }
